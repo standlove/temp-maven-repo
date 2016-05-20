@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>appirio.platform</groupId>
+  <artifactId>supply-library</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.9-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20160511234141</lastUpdated>
+  </versioning>
+</metadata>
