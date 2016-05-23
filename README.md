@@ -5,14 +5,14 @@ Used for managing dependencies which were managed initially through local-repo (
 Install required jar properly into this repo through `mvn install`
 
 ```sh
-mvn install:install-file -DgroupId=[group-id] -DartifactId=[artifact-id] -Dversion=[version] -DmodelVersion=[DmodelVersion] -Dpackaging=[packaging-format] -Dfile=[path-to-file] -DlocalRepositoryPath=[path-to-git-repo]
+mvn install:install-file -DcreateChecksum=true -DgroupId=[group-id] -DartifactId=[artifact-id] -Dversion=[version] -DmodelVersion=[DmodelVersion] -Dpackaging=[packaging-format] -Dfile=[path-to-file] -DlocalRepositoryPath=[path-to-git-repo]
 ```
 
 **NOTE : Fill [*] fields**
 
 example: 
 ```sh
-mvn install:install-file -DgroupId=com.topcoder.internal -DartifactId=shared -Dversion=1.0.0 -DmodelVersion=4.0.0 -Dpackaging=jar -Dfile=ap-project-microservice/lib/com/topcoder/internal/shared/1.0.0/shared-1.0.0.jar -DlocalRepositoryPath=temp-maven-repo
+mvn install:install-file -DcreateChecksum=true -DgroupId=com.topcoder.internal -DartifactId=shared -Dversion=1.0.0 -DmodelVersion=4.0.0 -Dpackaging=jar -Dfile=ap-project-microservice/lib/com/topcoder/internal/shared/1.0.0/shared-1.0.0.jar -DlocalRepositoryPath=temp-maven-repo
 ```
 
 Commit & Push these changes
