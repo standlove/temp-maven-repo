@@ -19,14 +19,6 @@ Commit & Push these changes
 
 #Consuming dependencies from this repo
 
-Remove previous references to local-repo i.e
-
-```xml
-  <repository>
-          <id>local-repo</id>
-          <url>file://${local-lib-repo}</url>
-  </repository>
-```
 Add following 
 ```xml
   <repository>
